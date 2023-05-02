@@ -7,8 +7,10 @@
 body {
     color: #a19aab;
     background: rgb(2,0,36);
-    background-image: url('/../images/background.jpeg');
+    background-image: url("../images/background.jpeg");
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(96,35,175,1) 46%, rgba(73,0,232,1) 100%);
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   
 h1 {
@@ -16,14 +18,11 @@ h1 {
     font-size: 40px;
 }
 
-  /* top nav bar */
-
 nav {
     width: 100%;
     background-color:grey;
     border:#4900e8;
     box-shadow: inset 10px 9px 25px 0px rgba(73,0,232,1);
-    border-radius: 10px;
 }
 
 ul {
@@ -31,7 +30,7 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 20px;
+    margin-top: 0;
     margin-bottom: 20px;
 }
 
@@ -49,4 +48,42 @@ ul>li>a{
     margin-top: 50px;
     border:#4900e8 2px solid;
     box-shadow: 10px 9px 25px 0px rgb(59, 56, 65);
+}
+
+#about-text {
+    margin: 60px;
+    font-size: large;
+}
+
+#about-img {
+    display: block;
+    margin: auto;
+}
+
+#movie-poster-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.movie-poster {
+    width: 300px;
+    margin: 30px;
+}
+
+#gallery-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.gallery-img {
+    width: 200px;
+}
+
+
+#error-img {
+    display: block;
+    margin: auto 50px;
 }
